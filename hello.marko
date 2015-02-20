@@ -1,0 +1,9 @@
+<layout-use template="./layout.marko" show-header="$true">
+	<layout-put into="title">My Page</layout-put>
+	<layout-put into="body">
+		<async-fragment data-provider="data.bodyProvider" var="body">
+			$body.content
+		</async-fragment>
+	</layout-put>
+</layout-use>
+
